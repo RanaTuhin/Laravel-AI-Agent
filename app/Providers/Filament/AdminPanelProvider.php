@@ -41,6 +41,7 @@ class AdminPanelProvider extends PanelProvider
                 AccountWidget::class,
                 FilamentInfoWidget::class,
             ])
+            ->authGuard('web')
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,

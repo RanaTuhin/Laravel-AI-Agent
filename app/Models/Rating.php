@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Hotel extends Model
+class Rating extends Model
 {
     //
 }

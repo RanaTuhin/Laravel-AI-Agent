@@ -11,14 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('hotel_books', function (Blueprint $table) {
-            $table->id();
-            $table->morphs('bookable');
+        Schema::create('temp_reservations', function (Blueprint $table) {
+            $table->uuid();
+            $table->string('reservation_data');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->foreignId('hotel_id')->constrained()->onDelete('cascade');
-            $table->date('check_in');
-            $table->date('check_out');
-            $table->date('booked_at');
+            $table->date('expires_at');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('books');
+        Schema::dropIfExists('temp_reservations');
     }
 };

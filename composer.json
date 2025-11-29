@@ -12,7 +12,10 @@
         "php": "^8.2",
         "laravel/framework": "^12.0",
         "laravel/mcp": "^0.3.4",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "mll-lab/laravel-graphiql": "^4.0",
+        "nuwave/lighthouse": "^6.63",
+        "spatie/laravel-data": "^4.18"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

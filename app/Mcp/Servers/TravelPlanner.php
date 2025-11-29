@@ -20,7 +20,7 @@ class TravelPlanner extends Server
      * The MCP server's instructions for the LLM.
      */
     protected string $instructions = <<<'MARKDOWN'
-        Instructions describing how to use the server and its features.
+        This server provides Travel planning services to users. It can help users find destinations, plan itineraries, and suggest activities based on their preferences.
     MARKDOWN;
 
     /**
